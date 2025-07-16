@@ -1,4 +1,4 @@
-package Lec4;
+package LECTURE4;
 
 public class Happy {
 

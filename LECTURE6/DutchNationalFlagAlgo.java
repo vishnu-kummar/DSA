@@ -1,4 +1,4 @@
-package Lec6;
+package LECTURE6;
 
 public class DutchNationalFlagAlgo {
 

@@ -1,4 +1,4 @@
-package Lec5;
+package LECTURE5;
 
 public class SumOfArray {
 

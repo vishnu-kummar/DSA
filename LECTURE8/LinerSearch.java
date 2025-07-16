@@ -1,4 +1,4 @@
-package Lec8;
+package LECTURE8;
 
 public class LinerSearch {
 
