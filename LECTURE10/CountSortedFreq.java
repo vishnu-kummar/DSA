@@ -6,6 +6,7 @@ public class CountSortedFreq {
 		
 		String s="aaaabbbcckkmmooxyzz";
 		
+	
 		for (int i = 0; i < s.length(); ) {
 			int j=i;
 			while( j<s.length()&&s.charAt(i) == s.charAt(j) ) {
