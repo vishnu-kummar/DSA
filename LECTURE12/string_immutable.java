@@ -2,7 +2,7 @@ package LECTURE12;
 
 
 
-public class string_IMmutable_meaning {
+public class string_immutable {
 
 	public static void main(String[] args) {
 		

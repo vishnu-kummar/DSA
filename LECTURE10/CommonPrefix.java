@@ -1,4 +1,4 @@
-package LECTURE10;
+//package LECTURE10;
 public class CommonPrefix {
 
 	public static void main(String[] args) {

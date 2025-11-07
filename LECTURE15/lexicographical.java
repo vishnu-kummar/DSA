@@ -13,18 +13,15 @@ public class lexicographical {
 	}
 	public static void create(int n,int given_n) {
 
-if(n>given_n) return;
-list.add(n);
+			if(n>given_n) return;
+			list.add(n);
 
-n=n*10;
-if(n>given_n) return;
+			n=n*10;
+			if(n>given_n) return;
 
-for (int i = 0; i <=9; i++) {
-	create(n+i, given_n);
-}
-
-
-
+			for (int i = 0; i <=9; i++) {
+				create(n+i, given_n);
+			}
 	
 	}
 

@@ -1,4 +1,4 @@
-package LECTURE10;
+//package LECTURE10;
 
 public class ascii {
   public static void main(String[] args) {

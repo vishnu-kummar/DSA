@@ -1,16 +1,19 @@
 package LECTURE5;
-
-public class 3sum {
+import java.util.*;
+public class threeSum {
      public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        System.out.print("Enter size of Array:");
         int n = sc.nextInt(); 
 
+        System.out.print("Enter "+n+ " Elements:");
         int[] arr = new int[n]; 
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt(); 
         }
 
+        System.out.print("Target:");
         int target = sc.nextInt(); 
         Arrays.sort(arr);
 
@@ -30,6 +33,7 @@ public class 3sum {
 
                 if (currentSum == target) {
                    
+                    System.out.print("Numbers are: ");
                     System.out.println(arr[i] + ", " + arr[left] + " and " + arr[right]);
 
                     // COMMENT: Skip duplicate elements for 'left' pointer.

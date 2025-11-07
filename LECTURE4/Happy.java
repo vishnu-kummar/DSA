@@ -4,7 +4,7 @@ public class Happy {
 
 	public static void main(String[] args) {
 		
-		int n=18;
+		int n=18;  // n = 19
 		int temp=0;
 		for(int i=1;i<=1000;i++) {
 			int sum=0;

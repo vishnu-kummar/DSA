@@ -1,4 +1,4 @@
-package LECTURE10;
+//package LECTURE10;
 
 import java.util.Scanner;
 
@@ -19,19 +19,19 @@ public class FreqCharacter {
         int[] charArr = new int[256]; 
 
         char mostFrequentChar = ' '; 
-        int maxFrequency = 0;        
+        int max = 0;        
 
         for (int i = 0; i < s.length(); i++) {
             char currentChar = s.charAt(i); 
 
-            charArr[currentChar]++;
+            charArr[currentChar]++;  // eg:So, charArr['b']++ is interpreted as charArr[98]++.charArr[98] (which was 0) become 1.This mean the charcter 'b' has apeare once
 
             // Get the updated frequency of the currentChar
             int currentFrequency = charArr[currentChar];
 
             
-            if (currentFrequency > maxFrequency) {
-                maxFrequency = currentFrequency;   
+            if (currentFrequency > max) {
+                max = currentFrequency;   
                 mostFrequentChar = currentChar;     
             }
         }

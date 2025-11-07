@@ -4,8 +4,8 @@ public class LCM {
 
 	public static void main(String[] args) {
 		
-		int n1=24;
-		int n2=18;
+		int n1=12;
+		int n2=60;
 		
 		int hcf=1;
 		
@@ -16,7 +16,7 @@ public class LCM {
 		}
 		
 		int lcm=(n1*n2)/hcf;
-		System.out.println(lcm);
+		System.out.println("LCM of "+n1+" & "+n2+" -> " + lcm);
 	}
 	
 }
