@@ -2,8 +2,9 @@ package STACKS;
 import java.util.*;
 
 /*
+                                                            POP - ANSWER - POP
  logic --> hum last element ko -1 mark kar denge aur us last elelment ko stack me push v kr denge,
- iske baad peeche se hi traverse krenge last elelemnt ke badd se, aur jb v us elelmnet se chota ellemnt dikhe stack me  peek pr toh use pop kr denge,
+ iske baad peeche se hi traverse krenge last elelemnt ke badd se, aur jb v us elelmnet se chota ellemnt dikhe stack ke peek pr toh use pop kr denge,
  pop krte krte agr, stack khali ho gya toh us eleemnt ke index pr -1 kr do, kyuko usse bada element nhi hai,
  agar elemnt bada dikha stack me us elelment se, toh wo number next greatest hoga, toh resultant array me stack ke peek ko push kr do - sath hi us
  elelemnt ko jise traverse kr rahe the, use  stack me push v  kr do,

@@ -1,26 +1,18 @@
 package STACKS;
 import java.util.*;
 /*
-infix expression x = "9 - 5 + 3 * 4 / 6"
--> we are going to use two stacks [val,ope] for this. first: to store number --> second: operator.   RULE BELOW:
-1. agr character is num -> then push it in val.push(ch)
-2. agr ope is empty --> then push without a second thought
-3. agr character is operator -> then push only after perfrming certain operation
-   -> certain operation:- if ope.peek() ki priority [M,D > A,S] >= current operator in infix. Then --> niptado. as in stack 'val' me pde 2 value/num
-      ko uthao use kisi variable let say v1=9,v2=5 --> aur stack 'ope' me pde operator ko uthao -> use v kisi variable me store karo as in -> O = -
-      phir operation perform kr do [vi-v2] i.e [9-4] --> this is niptado
-   -> ab infix expression waale operato eko push kr do ope.push(ch).
-   -> agr peek ki priority kam hai toh infix expression wala push ho jaega -> bina kisi operation ke 
-   -> ek baar poorae xpression traverse ho gya phir check kro while(val.size>1)   
 
-
-
-first find ascii value of "9" --> 57 . if ascii is between [48-57] that means character is any number btw [0-9]
+jb bracket aa jaye toh uski priority   [ () > D,M & A,S ] se v jyada hoti hai.
+-> slightly modification in empty 'ope' stack i.e if(op.size()==0 || ch == '('){ op.push(ch) } -> jush push without a second thought
+-> agr 'ope' stack ke peek pr opening bracket hai i.e '(' --> toh v push.
+-> age infix me closing bracet i.e ')' dikha -> toh kaam ko niptate raho jb tak ki peek pr opening bracet na dikh jaye. dikhte hi  ise '(' pop. Note: ise ')' push nhi krna hai.
+-> 
 
 */
-public class infix {
+public class infix2 {
     public static void main(String[] args) {
-        String str = "9-5+3*4/6";
+        
+        String str = "9-(5+3)*4/6";
 
         Stack<Integer> val = new Stack<>();
         Stack<Character> op = new Stack<>();
@@ -32,8 +24,22 @@ public class infix {
             if(ascii >= 48 && ascii <= 57){
                 val.push(ascii-48);  // because we don't have to pass ascii i.e 53 we have to pass number 5 -> so ascii - 48
             }
-            else if(op.size()==0){
+            else if(op.size()==0 || ch=='(' || op.peek() == '('){
                 op.push(ch);
+            }
+            else if(ch==')'){
+                while (op.peek()!='(') {
+                    // work
+                    int v2 = val.pop();
+                    int v1 = val.pop();
+                    if(op.peek()=='-') val.push(v1-v2);
+                    if(op.peek()=='+') val.push(v1+v2);
+                    if(op.peek()=='*') val.push(v1*v2);
+                    if(op.peek()=='/') val.push(v1/v2);
+
+                    op.pop();
+                }
+                op.pop(); // '(' hta diya
             }
             else{
                 if(ch=='+' || ch=='-'){ // agr expreson me +,- hai & peek pr v +,- hai toh hi kaam hoga -> aur kaam hone pr peek wala operatr pop v hoga
@@ -51,7 +57,7 @@ public class infix {
 
                 }
                 if(ch=='*' || ch=='/'){
-                    if(op.peek()=='*' || op.peek()=='/'){                           //    String str = " 9 - 5 + 3 * 4 / 6 " ;
+                    if(op.peek()=='*' || op.peek()=='/'){
                         // work
                     int v2 = val.pop();
                     int v1 = val.pop();
@@ -64,11 +70,10 @@ public class infix {
                     // push
                     op.push(ch);
                     }
-                    else op.push(ch);  // agr current character [*,/] ki priority peek pr pdi elelemnt[+,-] se bdi hai toh koi kaam nhi sirf push kr do us ch ko. [*+]
+                    else op.push(ch);
                 }
             }
         }
-        // string poora traverse hone ke baad v agr element bach gya uska operation -> check below:
         // val stack size -> 1
         while (val.size()>1) {
             int v2 = val.pop();

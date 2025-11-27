@@ -2,11 +2,11 @@ package STACKS;
 
 import java.util.Stack;
 
-// print the stack without using built in functyion like syso(st).  --> two ways:-
-// 1. either make new stack and transfer all valuein new stack again push all those elemnt into old stack but by printing those value before pushing.
-// 2. craete an array and copy all stack values in reverse order and again transfer all array value in that stack.
-// 3. by recursion, no new stack created so [S.c] -> O(1) --> but if you remeber there is something called call stack [which is also a space]
-//     so techinaclly it also takes order of n space.
+/* print the stack without using built in functyion like syso(st).  --> two ways:-
+1. either make new stack and transfer all valuein new stack again push all those elemnt into old stack but by printing those value before pushing.
+2. craete an array and copy all stack values in reverse order and again transfer all array value in that stack.
+3. by recursion, no new stack created so [S.c] -> O(1) --> but if you remeber there is something called call stack [which is also a space]
+   so techinaclly it also takes order of n space. */
 public class displayStack {
     public static void main(String[] args) {
          Stack<Integer> st = new Stack<>();
@@ -18,7 +18,7 @@ public class displayStack {
         //displayReverseRecur(st);
         displayRecur(st);
 
-                    // by craeting bew stack
+                    // by craeting new stack
 
         // Stack<Integer> st1 = new Stack<>();
         // while (st.size()>0) {

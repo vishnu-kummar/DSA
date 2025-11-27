@@ -42,9 +42,7 @@ public class Reverse {
 	}
 
 }
-
 /*
- 
 1 Bit -->	Single Binary Digit (0 or 1) -->The fundamental unit of information.
 1 Byte -->	8 Bits -->	The smallest addressable unit of memory.
 1 Kilobyte (KB) -->	1024 Bytes (2^10).
@@ -52,5 +50,4 @@ public class Reverse {
 Data Type	Size (Bits)		Size (Bytes)	Signed/Unsigned		Range
 int	        32 bits			4 bytes			Signed				[−2^31,2^31−1]
 long		64 bits			8 bytes			Signed				[−2^63,2^63−1]
-
  */

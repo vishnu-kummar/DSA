@@ -54,7 +54,7 @@ ek hi base class aur multiple derived class.
 
  }
 
- class circle extends triangle{
+ class circle extends Shape{
 
  }
 

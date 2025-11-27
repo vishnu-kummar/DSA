@@ -1,15 +1,25 @@
 package LECTURE1;
-
 import java .util.*;
+
+
 
 public  class practice {
 
-     static class Stack{
+    public static void main(String[] args) {
+    
+        
+    }
+}
+    
+ 
+
+   
+
+                
 
         
+    
 
-    }    
-} 
     
 
 

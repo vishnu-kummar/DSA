@@ -1,12 +1,12 @@
 # STACK
---> insertion ho ya deleltion dono --> front end se ho hoga yani ki ek hi rasta hai.
+--> insertion ho ya deletion dono --> front end se ho hoga yani ki ek hi rasta hai.
 --> stack works on priniple -> LIFO/FILO.
-eg: kafi saari plates rakhi hui hai 1 ke upar 1, aur hame lat say niche wali plates uthani hai ek hi rasta hai --> uske upar waale plates ko
+eg: kafi saari plates rakhi hui hai 1 ke upar 1, aur hame let say niche wali plates uthani hai ek hi rasta hai --> uske upar waale plates ko
     hatao aur us tak pahucho.....
 --> 3 operation
 1. PUSH --> insertion, timeComplexity -> O(1)
 2. POP  --> deletion ,                   O(1)             --> of topmost element
-3. PEEK  --> retrieval of only that elelment which is present at the top od stack   O(1)
+3. PEEK  --> retrieval of only that elelment which is present at the top of stack   O(1)
 
 --> other operation
 * SIZE()
@@ -91,4 +91,38 @@ NOTE: jab equal precendce hoti hai toh hum LEFT to RIGHT jaate hai.
                      9 - 5 + 2
                      4 + 2
                      6
--> intereserting thing is all this process is done by computer . question type will be we have given this infix expressioin in string format like this:     "9 - 5 + 3 * 4 / 6  "   -> now find answer            
+-> intereserting thing is all this process is done by computer . question type will be we have given this infix expressioin in string format like this:     "9 - 5 + 3 * 4 / 6  "   -> now find answer    
+
+# PREFIX EXPRESSION
+
+infix           = a+b
+-> it's prefix  = +ab
+-> it's postfix = ab+
+
+let say infix = 9 - 5 + 3 * 4 / 6
+        prefix: 9 - 5 + * 34 / 6
+                9 - 5 + /* 346
+                - 95 + /* 346
+                +- 95 /* 346
+
+        infix = 9 - (5 + 3) * 4 / 6        
+       prefix = 9 - + 53 * 4/6
+              = 9 - *+ 534 / 6
+              = 9 - /*+ 5346
+              = -9 /*+ 5346
+
+        pre: o V1 V2      
+
+# POSTFIX EXPRESSION
+
+infix           = a+b
+-> it's prefix  = +ab
+-> it's postfix = ab+
+
+let say infix = 9 - (5 + 3) * 4 / 6
+      postfix = 9 -  53 +   * 4 / 6
+                9 -  53 + 4 * / 6
+                9 -  53 + 4 * 6 /
+                953 + 4*6 /- 
+                 
+       pre: v1 v2 o          

@@ -18,9 +18,9 @@ public class basics {
          public Student(){
         //   // this is deafult contructor, agr parenthese khali chorna chahte hai toh parametrized ke sath-sath default wala v banana hoga.
          }
-    }
+      }
 
-    static class Car{
+    static public class Car{
         String name;
         int price;
         String type;
@@ -58,9 +58,9 @@ public class basics {
           c.price = 400000;
           c.type = "hatchback";
 
-          // avi tak humne jitne v class banaye sb main function ke bahar. KYA ye main ke andr v craete ho skt ahai ? --> YES but the problem is 
-          // us class ko main function ke bahar acces nhi kr paenge jaise Maa class banaya aur uske object ko main ke bahar se acces krne ki kosish ki
-          // to nhi ho paega 
+          /*  avi tak humne jitne v class banaye sb main function ke bahar. KYA ye main ke andr v craete ho skt ahai ? --> YES but the problem is 
+              us class ko main function ke bahar acces nhi kr paenge jaise Maa class banaya aur uske object ko main ke bahar se acces krne ki kosish ki
+              to nhi ho paega. */ 
            
           class Maa{
             String name;
@@ -86,6 +86,7 @@ public class basics {
           //  karana padega jaise:
          // Teachers t = new Teachers();  // showing error because we have constructor of class teacher.
          // t.name = "BKLsingh";
+         
 
     }
 }

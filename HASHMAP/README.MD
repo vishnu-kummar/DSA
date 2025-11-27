@@ -47,7 +47,7 @@ NOTE: HASMAP will give you best performance. key aur value dono ki datatype alag
 
 # METHODS
 1. PUT() --> insertion, updation (if already present)
-2. GET() --> fetch/getch value, null [if_not_present]
+2. GET() --> fetch/get value, null [if_not_present]
 
 # INTERNAL WORKING
 Addition/Insertion |
