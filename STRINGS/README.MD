@@ -1,0 +1,1 @@
+--> Basically character array is our String i.e. char[] arr = new char[];

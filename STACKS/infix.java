@@ -36,6 +36,7 @@ public class infix {
                 op.push(ch);
             }
             else{
+                // condition iliye check nhi kr rahe kyuki -> isme hamesha kkam hoga peek pr ya toh bdi value [/,*] hogi || barabar hogi [+,-]
                 if(ch=='+' || ch=='-'){ // agr expreson me +,- hai & peek pr v +,- hai toh hi kaam hoga -> aur kaam hone pr peek wala operatr pop v hoga
                     // work
                     int v2 = val.pop();

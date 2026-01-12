@@ -55,9 +55,10 @@ public class nextGreater_3_element {
              st.push(arr[i]);
         }
 
-         for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i]+" ");
         }
+        
         System.out.println();
         for (int i = 0; i < res.length; i++) {
             System.out.print(res[i]+" ");

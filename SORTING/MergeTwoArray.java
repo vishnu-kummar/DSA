@@ -1,7 +1,7 @@
-package LECTURE19;
+package SORTING;
 // The space complexity is O(N + M)
 // it will give sorted array only if array elemnts are sorted
-// duplicate elemnts can be present
+// won't remove duplicate element
 public class MergeTwoArray {
 
 	public static void main(String[] args) {
@@ -54,3 +54,29 @@ public class MergeTwoArray {
 	}
 
 }
+/*
+88: Merge sorted array
+class Solution {
+    public void merge(int[] arr1, int n, int[] arr2, int m) {
+        int p1 = n-1;
+        int p2 = m-1;
+        int p = m + n - 1;
+
+        while(p1 >= 0 && p2 >= 0){
+            if(arr1[p1] > arr2[p2]){
+                arr1[p] = arr1[p1];
+                p1--;
+            }else{
+                arr1[p] = arr2[p2];
+                p2--;
+            }
+            p--;
+        }
+        while(p2 >= 0){
+            arr1[p] = arr2[p2];
+            p2--;
+            p--;
+        }
+    }
+}
+*/

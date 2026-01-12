@@ -1,4 +1,4 @@
-package LECTURE19;
+package SORTING;
 
  // sorting algo. that uses divide-and-conquer approach to sort an array (divide krte krte single element lata hai & phir do single array ko compare krke sort krta hai)
 // TimeComplexity: O(nlogn)  SpaceComplexity:O(n) 
@@ -10,13 +10,13 @@ public class Merge_Sort {
 		
 		int arr_sort[]=sort(0,arr.length-1,arr);
 		for (int i = 0; i < arr_sort.length; i++) {
-			System.out.println(arr_sort[i]);
+			System.out.print(arr_sort[i]+" ");
 		}
 	}
 	
 	public static int[] sort(int si,int ei,int arr[] ) {
 		
-		if(si==ei) {
+		if(si>=ei) {
 			int a[]= new int [1];
 			a[0]=arr[si];
 			return a;

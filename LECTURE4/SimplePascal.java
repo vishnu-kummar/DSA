@@ -3,7 +3,7 @@ package LECTURE4;
 public class SimplePascal {
     public static void main(String[] args) {
         int n = 5;
-       int[][] arr=  Pascal(n);
+       int[][] arr =  Pascal(n);
 
        for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j <  arr[i].length; j++) {

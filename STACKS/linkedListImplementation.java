@@ -1,8 +1,15 @@
 package STACKS;
 
 // linkedlist implwmentation of sttack is better than array imolenetation because of size factor.
-//here we rae not maintaining our tail -> only head as we only have the access of topmost elelement
+//here we are not maintaining our tail -> only head as we only have the access of topmost elelement
 // sara operation head se hi hai --> peek me v head hi hoga,pop v head ka hi hoga
+/*
+
+->The Stack (Your code): You are choosing to add new items at the front.
+->50 (head) -> 40 -> 30 -> 20 -> 10 -> null
+->In this version, 50 is the "1st node" of the list because it is the entry point. 10 is the "last node" because its next is null.
+
+*/
 
 public class linkedListImplementation {
 
@@ -21,7 +28,7 @@ public static class LLStack{
     void push(int x){
         Node temp = new Node(x);
         temp.next = head;
-        head = temp;
+        head = temp;  // nye item ko har baar head bana de rahe hai kyuki -> LIFO -> pehla item hamesha last me jaana chahiye jo ki null ko point karega
         size++;
     }
     int pop(){

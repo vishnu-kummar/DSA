@@ -22,7 +22,7 @@ NOTE: though push,pop,peek is O(1) but since it works on LIFO if there are n ele
 --> size is unlimited push & push & push --> there is no limitation unlike array where size is fixed, unlike arraylist where if arraylist is full->
     it doubles it size dynamically.
 
-get________T.C_______S.C______
+get________T.C_______S.C__
 ARRAYS     O(1)      O(1)       
 LL         O(n)      O(n)
 STACK      O(n)      O(n)    --> space is also order of n because let say if there are 4 elelmts in stack & you wan to access any element

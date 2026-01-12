@@ -1,13 +1,11 @@
 package STACKS;
 import java.util.*;
 /*
-
 jb bracket aa jaye toh uski priority   [ () > D,M & A,S ] se v jyada hoti hai.
 -> slightly modification in empty 'ope' stack i.e if(op.size()==0 || ch == '('){ op.push(ch) } -> jush push without a second thought
 -> agr 'ope' stack ke peek pr opening bracket hai i.e '(' --> toh v push.
 -> age infix me closing bracet i.e ')' dikha -> toh kaam ko niptate raho jb tak ki peek pr opening bracet na dikh jaye. dikhte hi  ise '(' pop. Note: ise ')' push nhi krna hai.
 -> 
-
 */
 public class infix2 {
     public static void main(String[] args) {

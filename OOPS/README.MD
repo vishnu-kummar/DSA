@@ -42,6 +42,7 @@ jaise let say humne object create kiya pr values nhi fiye toh int ke liye defaul
 --> jaise function ke through humne jo variable accept kiya uska naame aur jo attribute class me pehle se define hai unka naame --> agr dono same hai,
    toh compiler ke liye differntiate karna muskil ho jata hai kaun sa attribute hai aur kaun sa function ke through aaya / argument  --> iske liye this keyword aata hai. 
 --> this current class ko refer karta hai.
+-> In Java, this is very simple: it always points to the current object (the class instance), especially in constructors to distinguish between a parameter and a class variable.
 
 # [CONSTRUCTOR]
   jaise humne student class banaya aur --> use value put krne ke liye object banaya aur phir baar-baar --> dot operator ka use karke --> attribute access 
