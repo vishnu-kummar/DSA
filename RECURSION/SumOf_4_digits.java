@@ -7,7 +7,7 @@ public class SumOf_4_digits {
 
         //-------------------------
 
-        int x = -5237;
+        int x = 5237;
         System.out.print(count(x));
     }
 

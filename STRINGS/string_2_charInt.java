@@ -16,7 +16,7 @@ public class string_2_charInt {
         System.out.println(x+10);      // ghi10
         System.out.println(x+10+20);  //  ghi1020  [predence left to right [same operator]]
         System.out.println(x+(10+20));// ghi30
-        System.out.println(10+20+"abc");
+        System.out.println(10+20+"abc"); // 30abc
 
     }
 }

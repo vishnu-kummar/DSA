@@ -1,5 +1,5 @@
 /*
---> agr hume head diya jata tha, aur kaha jata tha ki let sAt 4th ellement find karo toh hum easily kar dete the,
+--> agr hume head diya jata tha, aur kaha jata tha ki [let say 4th element] find karo toh hum easily kar dete the,
    pr ab hume head toh diya jaega, sath hi index v diya jaega pr iss baar --> aage ki bajay piche se wo element find karna hai.
 Approach:
 pehla --> hum pehle traversal me size nikale phir formula lagaye m - n + 1 par isme 2 baar traverse hoga 
